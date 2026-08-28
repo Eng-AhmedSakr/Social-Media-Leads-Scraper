@@ -9,9 +9,8 @@ from playwright.async_api import async_playwright
 # SETTINGS
 # ============================================================
 
-EXCEL_FILE = r"D:\Data Analysis\Works\New folder\ROARS.xlsx"
-
-OUTPUT_FILE = r"D:\Data Analysis\Works\New folder\ROARS_Instagram_Comments.xlsx"
+EXCEL_FILE = "input_data.xlsx"
+OUTPUT_FILE = "output_results.xlsx"
 
 # عدد الشركات
 MAX_COMPANIES = 76
@@ -23,9 +22,7 @@ MAX_POSTS_PER_PAGE = 20
 HEADLESS = False
 
 # بروفايل Instagram المحفوظ
-PROFILE_DIR = Path(
-    r"D:\Instagram_Playwright_Profile"
-)
+PROFILE_DIR = Path("./browser_profile")
 
 # الانتظار بين العمليات
 WAIT_AFTER_PROFILE = 3
