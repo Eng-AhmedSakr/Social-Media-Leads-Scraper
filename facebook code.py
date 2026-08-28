@@ -9,9 +9,8 @@ from playwright.async_api import async_playwright
 # SETTINGS
 # ============================================================
 
-EXCEL_FILE = r"D:\Data Analysis\Works\New folder\Facebook.xlsx"
-
-OUTPUT_FILE = r"D:\Data Analysis\Works\New folder\Facebook_Comments_Results.xlsx"
+EXCEL_FILE = "input_data.xlsx"
+OUTPUT_FILE = "output_results.xlsx"
 
 # ============================================================
 # TEST / RUN SETTINGS
@@ -35,9 +34,7 @@ MAX_COMMENT_ROUNDS = 15
 
 HEADLESS = False
 
-PROFILE_DIR = Path(
-    r"D:\Data Analysis\Works\New folder\facebook_profile"
-)
+PROFILE_DIR = Path("./browser_profile")
 
 
 # ============================================================
